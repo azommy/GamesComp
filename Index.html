@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+    <head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="x-UA-Compatible" content="IE-edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="icon" href="IMG/Logositelo.png" type="image/x-icon">
+	  <link rel="stylesheet" href="CSS/TeladeLogin.css">
+	  <title>GamesComp</title>
+	</head>
+    <body>
+      <section class="area-login">
+	    <div class="Login">
+		    <div>
+			  <img src="IMG/Logositelo.png">
+			 </div>
+			 
+			 <form method="POST">
+			    <input type="text" name="nome" placeholder="nome de usuario" id ="login" autofocus>
+				 <input type="password" name="senha" placeholder="sua senha" id="senha">
+				 <input type="submit" value="entrar" onclick="logar();return false">
+			 </form>
+		   <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+             
+                location.href = "index-Home.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+			 
+			 <p>Ainda não tem uma conta ? <a href="#"> Criar conta </a></p>
+        </div>			 
+	  </section>
+    </body>
+
+</html>	
